@@ -5,9 +5,6 @@ from pages.base_page import BasePage
 
 class LogoPage(BasePage): 
 
-    def __init__ (self, driver):
-        self.driver = driver
-
     @allure.step('Проверка отображения логотипа Самоката на главной странице Самоката')
     def check_logo_scooter(self):
         self.find_element_with_wait(Logos_locators.LOGO_SCOOTER)
